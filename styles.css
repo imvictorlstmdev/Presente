@@ -1,0 +1,63 @@
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Remove margens padrão do body */
+    background-color: #f0f4f8; /* Cor de fundo suave e clara */
+}
+
+/* Estilo do contêiner */
+.container {
+    text-align: center;
+    padding: 30px; /* Aumenta o preenchimento para mais espaço */
+    border: 1px solid #d1d1d1; /* Borda mais suave */
+    background-color: #ffffff; /* Fundo branco para o contêiner */
+    border-radius: 10px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+    max-width: 500px; /* Largura máxima do contêiner */
+    width: 90%; /* Largura total em telas pequenas */
+    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito de hover no contêiner */
+.container:hover {
+    transform: translateY(-5px); /* Eleva o contêiner ao passar o mouse */
+}
+
+/* Estilo do botão */
+.btn {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 30px; /* Ajusta o preenchimento do botão */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    margin: 10px 0; /* Margem acima e abaixo do botão */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+/* Efeito de hover no botão */
+.btn:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão ao passar o mouse */
+}
+
+/* Estilo para textos */
+h2 {
+    color: #333; /* Cor do texto do cabeçalho */
+    font-size: 24px; /* Tamanho da fonte do cabeçalho */
+    margin-bottom: 15px; /* Espaçamento abaixo do cabeçalho */
+}
+
+p {
+    color: #666; /* Cor do texto do parágrafo */
+    font-size: 16px; /* Tamanho da fonte do parágrafo */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}

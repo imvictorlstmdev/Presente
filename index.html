@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com Senha</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+</head>
+<body>
+
+<div class="container" id="loginContainer">
+    <h2>Digite a Senha para Acessar</h2>
+    <input type="password" id="password" placeholder="Senha">
+    <button onclick="checkPassword()">Entrar</button>
+    <p id="message" style="color: red;"></p>
+</div>
+
+<script>
+    // Mapeamento de senhas para URLs
+    const passwordMap = {
+        "Bianca": "pagina1.html",
+        "senha2": "pagina2.html",
+        "senha3": "pagina3.html"
+    };
+
+    function checkPassword() {
+        const inputPassword = document.getElementById("password").value;
+        const messageElement = document.getElementById("message");
+        
+        // Verifica se a senha está no mapeamento
+        if (passwordMap[inputPassword]) {
+            // Redireciona para a página correspondente
+            window.location.href = passwordMap[inputPassword];
+        } else {
+            messageElement.textContent = "Senha incorreta. Tente novamente.";
+        }
+    }
+</script>
+
+</body>
+</html>
